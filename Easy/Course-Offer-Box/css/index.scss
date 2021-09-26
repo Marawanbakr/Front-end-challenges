@@ -1,0 +1,115 @@
+body { font-family: 'Open Sans', sans-serif}
+@import url(./normalize.scss);
+:root {--main-color:#ff9800}
+// global components
+* {
+  text-transform: capitalize;
+}
+.container {
+  width: 76%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-bottom: 5%;
+}
+style.card {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 2%;
+  padding-left: 25px;
+}
+.info {
+  width: 90%;
+  p {font-size: small;}
+  h2  {
+    box-shadow: inset 0px -8px 10px -6px var(--main-color);
+    width: 85%;
+     i {color:var(--main-color)}  }
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  .price-info {
+    font-size: xx-large;
+    color: #404b61;
+    .currency {
+      font-size:.5em;
+      vertical-align:text-top;
+    }
+    .usd {
+      font-size:.5em;
+      vertical-align:text-bottom;
+    }
+  }
+  button {
+   padding: 20px;
+   background-color:var(--main-color);
+   color: #fff;
+   border-radius: 5px;
+   border: 0;
+  }
+}
+
+.parent {
+  background-color: #51509b;
+  border-radius: 10px;
+  margin: 1% 1%;
+  // Start Title 
+    .title {
+      width:100% ;
+      color: #fff;
+      display: flex;
+      .container {
+        padding-top: 5%;
+        h1 {
+          font-family:sans-serif;
+          font-style: oblique;
+          i {
+            color: var(--main-color);
+          }
+        }
+        p {
+          color: #fff;
+          font-family:auto
+        }
+      }
+    }
+  // End Title 
+  // Start Child-card
+  .child-card {
+    @extend .container;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    .pig-card {
+      z-index: 1;
+      width: 60%;
+      @extend style.card;
+        @extend.info;
+        h2 {
+          width: 35%;
+        }
+      }
+    // End Child-card
+    // Start title-footer
+   .Frist-title-footer {
+      padding-bottom: 20px;
+      width: 100%;
+      font-size: small;
+    }
+    // End title-footer
+  }
+  // Start Card Small
+  .tow-child-card {
+    @extend style.card;
+    width: 25%;
+    height: 280px;
+    .info {
+      width: 90%;
+    }
+    .footer-info {
+      width: 95%;
+    }
+  }
+}
