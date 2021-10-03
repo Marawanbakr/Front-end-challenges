@@ -6,6 +6,7 @@
      margin:0 ;
      text-transform: capitalize;
 }
+:root { --main-width:90%}
 body {
     font-family:  sans-serif;}
 .parent {
@@ -53,6 +54,7 @@ body {
     padding-top: 15px;
     flex-direction: column;
 }
+
 .information .heaad > .level {
     height: 11%;
     padding-top: 5px;
@@ -116,6 +118,7 @@ body {
     font-size: 13px;
     display: inline
 }
+
 /*  end information */
 /* start points-log */
 .points-log  {
@@ -218,17 +221,7 @@ left: 40px;
     padding: 13px;
     background-color: #607d8b;
 } 
- .trophies .container .include-tocolor {
-    background-color: #fff;
-    height: 38%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    align-items: flex-start;
-    width: 100%;
-    padding-left: 15px;
-} 
+
 
 .trophies .container .all-photo {
     display: flex;
@@ -241,6 +234,7 @@ left: 40px;
     width: 8%;
     border: 1px solid #eee;
  }
+
  .trophies .container .include-tocolor {
     background-color: #fff;
     height: 100%;
@@ -355,3 +349,37 @@ left: 40px;
     font-family: Oswald;
 }
 /* end your your-power */
+@media ( max-width:990px) {
+    .information .heaad {
+        width: 20%;
+    }
+    .information .info {
+    width: 80%;
+    }
+    .information > .container img {
+        width:80% ;
+    }
+    .heaad .discription {
+        font-size: initial;
+    }
+    .information::before {
+        width: var(--main-width);
+    }
+    .points-log::before {
+        width: var(--main-width);
+    }
+    .trophies::before {
+        width: var(--main-width);
+    }
+    .your-power::before {
+        width: var(--main-width);
+    }
+    .leadr-news::before {
+        width: var(--main-width);
+    }
+    .info p {
+        line-height: 20px;
+        font-size: 17px;
+    }
+   
+}

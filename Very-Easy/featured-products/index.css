@@ -11,9 +11,9 @@
     grid-template-columns: repeat(4,400px);
     grid-template-rows: repeat(4,100px);
     gap: 10px;
-    justify-content: end;
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 .contaier > div {
     border: 7px solid #eee;
@@ -29,6 +29,7 @@ h4 {
     width: 170px;
     height: 21px;
     grid-row: 1;
+    margin-left: -26px;
     background-color: #275561;
 }
 .frist-imge {

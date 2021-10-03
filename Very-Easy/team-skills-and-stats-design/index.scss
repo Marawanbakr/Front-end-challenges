@@ -84,6 +84,8 @@
       background-color: #eee;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+
       .img {
         width: 40%;
         img {
@@ -93,8 +95,23 @@
       }
       .info {
         width: 50%;
+        p {
+          line-height: 50px;
+          font-size: 20px;
+        }
       }
     }
+    @media (max-width:1400px) {
+      .about {
+        flex-direction: column;
+        align-items:normal;
+      }
+      .about .info p {
+        line-height: 20px;
+        font-size: 16px
+      }
+   
+  }
     // End About
     // Start Cetagory
     .cetagory {

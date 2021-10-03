@@ -11,17 +11,13 @@ div {
     color: #fff;
   position: relative;
   padding: 20px;
-  background-color: red;
-  transition: 1s;
-  
+  background-color: red;  
   &::after {
     content: "this is tooltip content";
     top: -75px;
     width: 110%;
-    transition: 4s;
     padding: 20px;
     height: 20px;
-    display: none;
     color: #fff;
     position: absolute;
     left: -26.5px;
@@ -33,13 +29,20 @@ div {
     position: absolute;
     top: -15px;
     border-style: solid;
-    display: none;
     border-width: 10px;
     border-color: #333 transparent transparent;
   }
+  &:before, &::after {
+    visibility: hidden;
+    transition: .8s;
+    opacity: 0;
+  } 
   &:hover::before,&:hover::after{
-    transition-delay: 4s;
-    display: block;
+      opacity: 1;
+      visibility: visible;
+    
     }
   }
+
 }
+

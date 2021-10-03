@@ -42,8 +42,9 @@
     background-color: #2196f3;
     
 }
-.parent .basic .container  p {
+.parent .basic .container  p ,.parent .professiolan .container  p {
     position: relative;
+    font-size: 15px;
 }
 .parent .basic .container  p::before {
     content: "";
@@ -93,7 +94,7 @@
     top: 66px;
     border-color: #2196f3 transparent #2196f3 #2196f3;
     border-style: solid;
-    border-width: 21px;
+    border-width: 20px;
     font-size: larger;
     text-align: center;
 
@@ -105,15 +106,13 @@
     width: 93px;
     color: #fff;
     right: 244px;
-    top: 73px;
+    top: 70px;
     border-color: #2196F5 transparent #2196f3 #2196f3;
     font-size: larger;
     text-align: center;
     z-index: 1;
 }
-.parent .professiolan .container  p {
-    position:relative;
-}
+
 .parent .professiolan .container  p::before {
     content: "";
     position:absolute;
